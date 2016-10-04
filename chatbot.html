@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <title>
+        T-100 Terminator
+    </title>
+</head>
+<body id="idea">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-18 col-md-12">
+                <h1 align="center">T-100 from Terminator</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 col-md-2">
+                <div id="left-sidebar">
+                  <p>Send a message through time and press the button to communicate with Arnold *cough* Terminator.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8">
+              <div id="question-area" data-spy="affix" data-offset-top="60">
+                <form onsubmit="return false;" defaultbutton="button()">
+                  <input onkeydown="pressEnter(event)" type="text" id="input" value="">
+                  <button type="button" id="talkButton" class="btn-talk" onclick="button()">Speak</button>
+                </form>
+              </div>
+                <div id="chat-area">
+                </div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <div id="right-sidebar">
+                  Some questions you might ask:
+                  <ul>
+                    <li>Who is John Connor?</li>
+                    <li>Have you heard of T-1000</li>
+                    <li>Who invented Skynet?</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
